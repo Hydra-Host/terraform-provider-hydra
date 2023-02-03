@@ -21,18 +21,19 @@ We currently support local installation of the provider. This follows a prescrip
 
 1. Get the release for your OS and ARCH: https://github.com/Hydra-Host/terraform-provider-hydra/releases
 2. Make note of the OS, ARCH, and VERSION which are used to setup the local path.
-3. Create the local directory for the provider binary.
+3. Create the local directory for the provider binary and move to that directory.
   ```
   mkdir -p ~/.terraform.d/plugins/hydra.host/local/hydra/
+  cd ~/.terraform.d/plugins/hydra.host/local/hydra/
   ```
 
-4. 
+4. Decompressed the file contents.
 ``` bash 
 unzip terraform-provider_"version"_"os"_"arch".zip
 
 ```
 
-5. You will find a version folder in the extraction (e.g. 0.0.1) . Move the folder for your version from the provided zip archive into the local directory.
+5. If you extracted the archive somewhere else, find the folder named after the semantic version in the extracted contents (e.g. 0.0.1). Move the folder into the local plugins directory.
 
 ``` bash
 mv '0.0.1' ~/.terraform.d/plugins/hydra.host/local/hydra/
