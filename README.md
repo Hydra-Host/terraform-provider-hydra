@@ -19,7 +19,7 @@ We currently support local installation of the provider. This follows a prescrip
 
 ### Install the Provider
 
-1. Get the release for your OS and ARCH: https://gitlab.com/hydrahost-developers/oblivion-group/terraform-provider-hydra/-/releases
+1. Get the release for your OS and ARCH: https://github.com/Hydra-Host/terraform-provider-hydra/releases
 2. Make note of the OS, ARCH, and VERSION which are used to setup the local path.
 3. Create the local directory for the provider binary.
   ```
@@ -32,10 +32,10 @@ unzip terraform-provider_"version"_"os"_"arch".zip
 
 ```
 
-5. You will find a version folder in the extraction (E.G 0.0.2) . Move the folder for your version from the provided zip archive into the local directory.
+5. You will find a version folder in the extraction (e.g. 0.0.1) . Move the folder for your version from the provided zip archive into the local directory.
 
 ``` bash
-mv '0.0.2' ~/.terraform.d/plugins/hydra.host/local/hydra/
+mv '0.0.1' ~/.terraform.d/plugins/hydra.host/local/hydra/
 ```
 
 ### Create Hydra Compute
@@ -91,9 +91,9 @@ resource "hydra_virtual_machine" "compute" {
 ``` text
 $ terraform init
 Initializing provider plugins...
-- Finding hydra.host/local/hydra versions matching "~> 0.0.2"...
-- Installing hydra.host/local/hydra v0.0.2...
-- Installed hydra.host/local/hydra v0.0.2 (unauthenticated)
+- Finding hydra.host/local/hydra versions matching "~> 0.0.1"...
+- Installing hydra.host/local/hydra v0.0.1...
+- Installed hydra.host/local/hydra v0.0.1 (unauthenticated)
 
 Terraform has created a lock file .terraform.lock.hcl to record the provider
 selections it made above. Include this file in your version control repository
