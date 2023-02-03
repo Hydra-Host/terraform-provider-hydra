@@ -1,0 +1,28 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# provider binary
+terraform-provider-hydra
+
+# Folders
+_obj
+_test
+vendor
+
+_testmain.go
+
+*.test
+*.prof
+
+tmp/
+.env
+test.go
+*.swp
+*.un~
+
+
+*.tfstate*
+
+.vscode
